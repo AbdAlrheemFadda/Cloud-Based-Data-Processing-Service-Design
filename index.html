@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYUS Restaurant Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-green: #50E380;
+            --text-white: #FFFFFF;
+            --text-dark: #333333;
+            --text-gray: #777777;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--text-white);
+        }
+        .hero h5 {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        .hero h1 {
+            font-size: 64px;
+            margin: 10px 0;
+            max-width: 900px;
+            line-height: 1.2;
+        }
+        .hero p {
+            max-width: 600px;
+            font-size: 18px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        .btn {
+            background-color: var(--primary-green);
+            color: #000;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 14px;
+            display: inline-block;
+        }
+
+        /* Discover Section */
+        .discover {
+            padding: 100px 0;
+            background-color: #fff;
+        }
+        .discover-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        .discover-left h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+        .discover-left p.desc {
+            color: var(--text-gray);
+            margin-bottom: 40px;
+            line-height: 1.6;
+            max-width: 500px;
+        }
+        .feature-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        .feature-card h4 {
+            margin: 20px 0 10px;
+            font-size: 20px;
+        }
+        .feature-card p {
+            color: var(--text-gray);
+            line-height: 1.5;
+            font-size: 14px;
+        }
+
+        .discover-right {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        /* Signature Menu Section */
+        .signature-menu {
+            height: 70vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1517457373958-b7bdd4587205?q=80&w=2069&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            color: var(--text-white);
+            padding: 0 10%;
+        }
+        .menu-content {
+            max-width: 600px;
+        }
+        .menu-content h6 {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+        .menu-content h2 {
+            font-size: 48px;
+            margin: 10px 0;
+        }
+        .menu-content p {
+            font-size: 16px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 36px; }
+            .discover-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <h5>Good Place. Good Food.</h5>
+        <h1>A Really Good Place To Eat In The City Of New York</h1>
+        <p>Massa praesent ut suspendisse ac volutpat amet. Commodo elit at non neque ullamcorper id.</p>
+        <a href="#" class="btn">Book A Table Now</a>
+    </section>
+
+    <section class="discover">
+        <div class="container">
+            <div class="discover-grid">
+                <div class="discover-left">
+                    <h2>Discover The Good Atmosphere Of NYUS.</h2>
+                    <p class="desc">Neque elit, rutrum in laoreet nec eget scelerisque volutpat sit. Bibendum tincidunt a scelerisque consectetur ultrices elementum pulvinar non. Leo ut id vel nec nisi odio nisi. Auctor egestas nibh augue enim, ornare blandit. Purus augue sagittis, risus phasellus egestas ipsum.</p>
+
+                    <div class="feature-card">
+                        <img src="https://images.unsplash.com/photo-1522383225653-ed111181a951?q=80&w=2076&auto=format&fit=crop" alt="Good Vibes">
+                        <h4>Good Vibes</h4>
+                        <p>In total 650m² of hand-crafted decor, mix of styles and colors.</p>
+                    </div>
+                </div>
+                <div class="discover-right">
+                    <div class="feature-card">
+                        <img src="https://images.unsplash.com/photo-1493932484895-752d1471eab5?q=80&w=2070&auto=format&fit=crop" alt="Cozy Place">
+                        <h4>Cozy Place</h4>
+                        <p>To make everyone entering the establishment feel at home and find their atmosphere.</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="https://images.unsplash.com/photo-1463171359979-330b66a36540?q=80&w=2070&auto=format&fit=crop" alt="Relax Atmosphere">
+                        <h4>Relax Atmosphere</h4>
+                        <p>Take refuge in our exclusive haven of greenery and away from the crowds. Live music and performances every Friday night!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="signature-menu">
+        <div class="menu-content">
+            <h6>Homemade</h6>
+            <h2>Signature Menu</h2>
+            <p>Neque elit, rutrum in laoreet nec eget scelerisque volutpat sit. Bibendum tincidunt a scelerisque consectetur ultrices elementum pulvinar non.</p>
+            <a href="#" class="btn">Book A Table Now</a>
+        </div>
+    </section>
+
+</body>
+</html>
